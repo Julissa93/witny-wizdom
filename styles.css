@@ -17,7 +17,9 @@
     cursor: inherit;
     display: block;
 }
-
+.btn-info {
+    background-color:#e0ee00;
+}   
 #img-upload{
     width: 50%;
     padding-top: 5%;
