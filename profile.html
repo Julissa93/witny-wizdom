@@ -54,11 +54,14 @@
             <center><img class = "img-circle" id='img-upload'/></center>
         </div>
 
-        <button type = "button" class = "btn btn-success btn-block">Next</button>
+        <button type = "button" id = "next" class = "btn btn-success btn-block">Next</button>
       </form>
     </div>
   </div>
 <script>
+document.getElementById("next").onclick = function () {
+        location.href = "skillstaught.html";
+    };
 $(document).ready( function() {
     	$(document).on('change', '.btn-file :file', function() {
 		var input = $(this),
