@@ -1,5 +1,10 @@
+.logo { padding-top: 10%;
+padding-left: 6%;
+}
+
 body
-{
+{ background-image: url("pictures/bg.jpg");
+display: block;
 
 }
 
@@ -23,7 +28,11 @@ body
     display: block;
 }
 .btn-info {
+<<<<<<< HEAD
+    background-color: #93CCEA;
+=======
   
+>>>>>>> e2456d6db24325b08cc1de47518273a7a2b93157
 }
 #img-upload{
     width: 50%;
@@ -51,7 +60,7 @@ body
     li{border: 1px solid teal;}
     
 #skills{
-  padding: 5%; 
+  padding: 5%;
 }
 
 .circle {
@@ -71,6 +80,13 @@ body
 }
 
 button {
-  outline: none; 
+  outline: none;
 }
 
+#info{
+  font-size: 18px;
+}
+
+#achievements{
+  padding-bottom: 10%; 
+}
