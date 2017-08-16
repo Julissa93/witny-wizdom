@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="styles.css" rel="stylesheet">
+    <style>
+      #map {
+        width: 100%;
+        height: 550px;
+        background-color: grey;
+      }
+      h1 {
+        color:#55a18a;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align:center">Find out who is nearby!</h1>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var bounds = new google.maps.LatLngBounds();
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: { lat: 40.763591, lng: -73.949380 }
+        });
+        // Multiple Markers
+        var markers = [
+            ['Roosevelt Island Senior Association, NYC', 40.763591, -73.949380,
+                '<img src="pictures/avatar2.jpg" class="circle"><h3>Hi! My name is Elizabeth!</h3><p>I am a Chess Wiz</p>'],
+            ['Jeffrey, NYC', 40.764722, -73.956549,
+              '<img src="pictures/avatar4.jpg" class="circle"><h3>Hi! My name is Jeffrey!</h3><p>My love for hiking is only trumped by love for baking</p>'],
+            ['Amy, NYC', 40.768585, -73.944780,
+              '<img src="pictures/avatar8.jpg" class="circle"><h3>Hi! My name is Amy!</h3><p>Dancing is my passion</p>'],
+            ['Dwayne, NYC', 40.765928, -73.939426,
+              '<img src="pictures/avatar5.jpg" class="circle"><h3>Hi! My name is Dwayne!</h3><p>Want to learn chess</p>'],
+        ];
+        // Display multiple markers on a map
+        var infoWindow = new google.maps.InfoWindow(), marker, i;
+
+        // Loop through our array of markers & place each one on the map
+        for( i = 0; i < markers.length; i++ ) {
+            var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
+            bounds.extend(position);
+            //map.fitBounds(bounds);
+            marker = new google.maps.Marker({
+                position: position,
+                map: map,
+                title: markers[i][0]
+            });
+            // Allow each marker to have an info window
+            google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                return function() {
+                    infoWindow.setContent(markers[i][3]);
+                    infoWindow.open(map, marker);
+                }
+            })(marker, i));
+        }
+
+        // Override our map zoom level once our fitBounds function runs (Make sure it only runs once)
+        var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
+            this.setZoom(14);
+            google.maps.event.removeListener(boundsListener);
+        });
+
+      }
+
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbWjNLAvrb5IIrZRO3mdeoYFnBZBkIFJg&region=US&callback=initMap">
+    </script>
+  </body>
+</html>
