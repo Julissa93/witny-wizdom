@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter');
 .logo { padding-top: 10%;
 padding-left: 6%;
+}
+
+.profile {padding-top: 15%
 }
 
 body
 { background-image: url("pictures/bg.jpg");
 display: block;
-
+font-family: 'Bitter', serif;
 }
 
 .btn-file {
