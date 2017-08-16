@@ -37,6 +37,15 @@ font-family: 'Bitter', serif;
     background-color: #93CCEA;
 
 }
+.btn-success{
+    background-color: #93CCEA !important;
+}
+
+#imgInp{
+    background-color: #93CCEA;
+
+
+
 #img-upload{
     width: 50%;
     padding-top: 5%;
@@ -61,7 +70,7 @@ font-family: 'Bitter', serif;
     p{border: 1px solid purple;}
     ul{border: 1px solid gray;}
     li{border: 1px solid teal;}
-    
+
 
 #skills{
   padding: 5%;
