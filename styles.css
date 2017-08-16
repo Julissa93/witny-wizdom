@@ -51,7 +51,7 @@ body
     li{border: 1px solid teal;}
     */
 #skills{
-  padding: 5%; 
+  padding: 5%;
 }
 
 .circle {
@@ -71,6 +71,13 @@ body
 }
 
 button {
-  outline: none; 
+  outline: none;
 }
 
+#info{
+  font-size: 18px;
+}
+
+#achievements{
+  padding-bottom: 10%; 
+}
