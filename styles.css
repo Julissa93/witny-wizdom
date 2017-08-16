@@ -62,6 +62,7 @@ font-family: 'Bitter', serif;
   max-width: 300px;
 }
 
+    /*
     div{border: 1px solid blue;}
     a{border: 1px solid red;}
     i{border: 1px solid green;}
@@ -71,6 +72,7 @@ font-family: 'Bitter', serif;
     p{border: 1px solid purple;}
     ul{border: 1px solid gray;}
     li{border: 1px solid teal;}
+    */
 
 
 #skills{
@@ -82,6 +84,7 @@ font-family: 'Bitter', serif;
     width: 80px;
     height: 80px;
     border: 3px solid grey;
+    background-color: white;
 }
 
 
@@ -140,3 +143,4 @@ button {
     font-size: 36px;
     margin-left: 50px;
 }
+
