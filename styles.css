@@ -34,11 +34,25 @@ font-family: 'Bitter', serif;
 }
 .btn-info {
 
+<<<<<<< HEAD
+    background-color: #93CCEA;
+
+}
+.btn-success{
+    background-color: #93CCEA !important;
+}
+
+#imgInp{
+    background-color: #93CCEA;
+=======
     background-color: #93CCEA;
 
   
 
+>>>>>>> 48be7f15f1c41312ceb7945bbf6cd3f94a16ed3d
 }
+
+
 #img-upload{
     width: 50%;
     padding-top: 5%;

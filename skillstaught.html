@@ -15,6 +15,33 @@
 </head>
 
 <body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="ownprofile.html" id="face3">My Profile</a>
+    <a href="explorerpage.html" id="face1">Explore Connections</a>
+    <a href="texting.html" id="face2">Messenger</a>
+    <a href="skillstaught.html" id="face4">Edit Skills</a>
+    <a href="nearby.html" id="face3">Nearby</a>
+    
+  </div>
+
+
+  <div id="main">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  </div>
+
+  <script type="text/javascript">
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+  }
+
+  function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+  }
+
+  </script>
 
   <div class="container text-center">
     <h2>What skills would you like to teach or learn?</h2>
@@ -101,7 +128,7 @@
   </div>
   <br>
   <div class="container">
-      <a class="btn btn-success btn-block">Next</a><br>
+      <a href="ownprofile.html" class="btn btn-success btn-block">Confirm</a><br>
   </div>
 
   <br>
