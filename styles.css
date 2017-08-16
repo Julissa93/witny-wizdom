@@ -45,7 +45,9 @@
     ul{border: 1px solid gray;}
     li{border: 1px solid teal;}
     */
-
+#skills{
+  padding: 5%; 
+}
 
 .circle {
     border-radius: 50%;
