@@ -1,0 +1,101 @@
+<html>
+<head>
+  <meta charset = "utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="styles.css" rel="stylesheet">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class = "Account">
+      <form class = "col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+        <h1 class = "text-center">Create Your Account</h1>
+        &nbsp;
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name">
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="text" class="form-control" id="password">
+        </div>
+
+        <div class="form-group">
+          <label for="zipcode">Zip Code: </label>
+          <input type="number" class="form-control" id="zip">
+        </div>
+
+        <div class="form-group">
+          <label for="select">Gender</label>
+          <select class="form-control" id="select">
+            <option>Female</option>
+            <option>Male</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="about">BirthDate: </label>
+          <input type="date" class="form-control" id="birthday">
+        </div>
+
+        <div class = "form-group">
+          <label>Upload Image</label>
+          <div class="input-group">
+              <span class="input-group-btn">
+                  <span class="btn btn-primary btn-file">
+                      Browse… <input type="file" id="imgInp">
+                  </span>
+              </span>
+              <input type="text" class="form-control" readonly>
+          </div>
+            <center><img class = "img-circle" id='img-upload'/></center>
+        </div>
+
+        <button type = "button" id = "next" class = "btn btn-success btn-block">Next</button>
+      </form>
+    </div>
+  </div>
+<script>
+document.getElementById("next").onclick = function () {
+        location.href = "profile.html";
+    };
+$(document).ready( function() {
+    	$(document).on('change', '.btn-file :file', function() {
+		var input = $(this),
+			label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+		input.trigger('fileselect', [label]);
+		});
+
+		$('.btn-file :file').on('fileselect', function(event, label) {
+
+		    var input = $(this).parents('.input-group').find(':text'),
+		        log = label;
+
+		    if( input.length ) {
+		        input.val(log);
+		    } else {
+		        if( log ) alert(log);
+		    }
+
+		});
+		function readURL(input) {
+		    if (input.files && input.files[0]) {
+		        var reader = new FileReader();
+
+		        reader.onload = function (e) {
+		            $('#img-upload').attr('src', e.target.result);
+		        }
+
+		        reader.readAsDataURL(input.files[0]);
+		    }
+		}
+
+		$("#imgInp").change(function(){
+		    readURL(this);
+		});
+	});
+</script>
+</body>
+</html>
