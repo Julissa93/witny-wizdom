@@ -1,5 +1,10 @@
+.logo { padding-top: 10%;
+padding-left: 6%;
+}
+
 body
-{
+{ background-image: url("pictures/bg.jpg");
+display: block;
 
 }
 
@@ -23,7 +28,7 @@ body
     display: block;
 }
 .btn-info {
-    background-color:#e0ee00;
+    background-color: #93CCEA;
 }
 #img-upload{
     width: 50%;
