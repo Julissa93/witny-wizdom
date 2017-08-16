@@ -32,11 +32,9 @@ font-family: 'Bitter', serif;
     display: block;
 }
 .btn-info {
-<<<<<<< HEAD
+
     background-color: #93CCEA;
-=======
-  
->>>>>>> e2456d6db24325b08cc1de47518273a7a2b93157
+
 }
 #img-upload{
     width: 50%;
@@ -52,7 +50,7 @@ font-family: 'Bitter', serif;
   max-height: 300px;
   max-width: 300px;
 }
-    
+
     div{border: 1px solid blue;}
     a{border: 1px solid red;}
     i{border: 1px solid green;}
@@ -62,7 +60,7 @@ font-family: 'Bitter', serif;
     p{border: 1px solid purple;}
     ul{border: 1px solid gray;}
     li{border: 1px solid teal;}
-    
+
 #skills{
   padding: 5%;
 }
@@ -92,5 +90,5 @@ button {
 }
 
 #achievements{
-  padding-bottom: 10%; 
+  padding-bottom: 10%;
 }
