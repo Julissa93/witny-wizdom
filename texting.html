@@ -6,6 +6,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
 <link rel="stylesheet" type="text/css" href="animate/animate.css">
 <link rel="stylesheet" type="text/css" href="hover/css/hover.css">
+<link href="styles.css" rel="stylesheet">
 
 <style type="text/css">
     .mytext{
@@ -45,7 +46,7 @@
     }
     .frame{
         background:#e0e0de;
-        height:450px;
+        height:650px;
         overflow:hidden;
         padding:0;
     }
@@ -105,36 +106,37 @@
 
 </head>
 <html>
-    <body>
-       <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="ownprofile.html" id="face3">My Profile</a>
-    <a href="explorerpage.html" id="face1">Explore Connections</a>
-    <a href="texting.html" id="face2">Messenger</a>
-    <a href="skillstaught.html" id="face4">Edit Skills</a>
-    <a href="nearby.html" id="face3">Nearby</a>
+    <body class="animated fadeIn">
     
-  </div>
+        
 
-
-  <div id="main">
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-  </div>
-
-  <script type="text/javascript">
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-      document.getElementById("main").style.marginLeft = "250px";
-  }
-
-  function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-      document.getElementById("main").style.marginLeft= "0";
-  }
-
-  </script>
         <div class="col-sm-3 col-sm-offset-4 frame">
             <ul></ul>
+            <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="ownprofile.html" id="face3">My Profile</a>
+            <a href="explorerpage.html" id="face1">Explore Connections</a>
+            <a href="texting.html" id="face2">Messenger</a>
+            <a href="skillstaught.html" id="face4">Edit Skills</a>
+            <a href="nearby.html" id="face3">Nearby</a>
+        </div>
+
+        <div id="main">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+
+        <script type="text/javascript">
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+
+        </script>
             <div>
                 <div class="msj-rta macro" style="margin:auto">                        
                     <div class="text text-r" style="background:whitesmoke !important">
@@ -150,10 +152,10 @@
 
 <script type="text/javascript">
     var me = {};
-me.avatar = "https://lh6.googleusercontent.com/-lr2nyjhhjXw/AAAAAAAAAAI/AAAAAAAARmE/MdtfUmC0M4s/photo.jpg?sz=48";
+me.avatar = "pictures/naman.jpg";
 
 var you = {};
-you.avatar = "https://a11.t26.net/taringa/avatares/9/1/2/F/7/8/Demon_King1/48x48_5C5.jpg";
+you.avatar = "pictures/young.png";
 
 function formatAMPM(date) {
     var hours = date.getHours();
@@ -219,11 +221,11 @@ resetChat();
 
 //-- Print Messages
 insertChat("you", "Hello Naman! We matched up on Wizdom, so when would be a good time for us to meet?", 0);  
-insertChat("me", "Hi, Dexter. I think next Tuesday we can meet at the Senior Center.", 4200);
-insertChat("you", "Great! I'll see you then. Are there any supplies you want me to bring?", 9130);
-insertChat("me", "Nope. The Senior Center has a great garden with all the tools that we will need.",14880);
-insertChat("you", "Perfect. Once there we can figure out a time for me to show you the ins and outs of your Computer.", 21040);
-insertChat("me", "See you then!", 28250);
+insertChat("me", "Hi, Jessica. I think next Tuesday we can meet at the Senior Center.", 100);
+insertChat("you", "Great! I'll see you then. Are there any supplies you want me to bring?", 200);
+insertChat("me", "Nope. The Senior Center has a great garden with all the tools that we will need.",300);
+insertChat("you", "Perfect. Once there we can figure out a time for me to show you the ins and outs of your Computer.", 400);
+insertChat("me", "See you then!", 500);
 
 
 //-- NOTE: No use time on insertChat.

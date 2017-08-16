@@ -57,9 +57,6 @@ font-family: 'Bitter', serif;
 #imgInp{
     background-color: #93CCEA;
 
-    background-color: #93CCEA;
-
-  
 }
 
 
@@ -74,9 +71,11 @@ font-family: 'Bitter', serif;
 
 #profilepic{
   padding-top: 6%;
+  align-content: center;
   max-height: 300px;
   max-width: 300px;
 }
+
     /*
     div{border: 1px solid blue;}
     a{border: 1px solid red;}
@@ -88,7 +87,8 @@ font-family: 'Bitter', serif;
     ul{border: 1px solid gray;}
     li{border: 1px solid teal;}
     */
-    
+
+
 #skills{
   padding: 5%;
 }
@@ -98,6 +98,7 @@ font-family: 'Bitter', serif;
     width: 80px;
     height: 80px;
     border: 3px solid grey;
+    background-color: white;
 }
 
 
@@ -117,9 +118,7 @@ button {
   font-size: 18px;
 }
 
-#achievements{
-  padding-bottom: 10%; 
-}
+
 
 
 .sidenav {
