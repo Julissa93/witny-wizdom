@@ -5,8 +5,8 @@ padding-left: 6%;
 
 .profile {padding-top: 15%
 }
-.nearbyTitle{padding-left: 18%;
-}
+/*.nearbyTitle{padding-left: 18%;
+}*/
 .editSkills{padding-bottom: 0%
 }
 .pic{
@@ -72,8 +72,8 @@ font-family: 'Bitter', serif;
 #profilepic{
   padding-top: 6%;
   align-content: center;
-  max-height: 300px;
-  max-width: 300px;
+  height: 150px;
+  max-width: 150px;
 }
 
     /*
