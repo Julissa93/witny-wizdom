@@ -57,6 +57,7 @@ font-family: 'Bitter', serif;
 
 #profilepic{
   padding-top: 6%;
+  align-content: center;
   max-height: 300px;
   max-width: 300px;
 }
