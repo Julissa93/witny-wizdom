@@ -32,12 +32,19 @@ font-family: 'Bitter', serif;
     display: block;
 }
 .btn-info {
-<<<<<<< HEAD
+
     background-color: #93CCEA;
-=======
-  
->>>>>>> e2456d6db24325b08cc1de47518273a7a2b93157
+
 }
+.btn-success{
+    background-color: #93CCEA !important;
+}
+
+#imgInp{
+    background-color: #93CCEA;
+}
+
+
 #img-upload{
     width: 50%;
     padding-top: 5%;
