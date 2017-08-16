@@ -5,9 +5,22 @@ padding-left: 6%;
 
 .profile {padding-top: 15%
 }
+.nearbyTitle{padding-left: 18%;
+}
+.editSkills{padding-bottom: 0%
+}
+.pic{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+    z-index: -5;
+    overflow: hidden;
+}
 
-body
-{ background-image: url("pictures/bg.jpg");
+body{
 display: block;
 font-family: 'Bitter', serif;
 
@@ -34,7 +47,6 @@ font-family: 'Bitter', serif;
 }
 .btn-info {
 
-<<<<<<< HEAD
     background-color: #93CCEA;
 
 }
@@ -44,12 +56,10 @@ font-family: 'Bitter', serif;
 
 #imgInp{
     background-color: #93CCEA;
-=======
+
     background-color: #93CCEA;
 
   
-
->>>>>>> 48be7f15f1c41312ceb7945bbf6cd3f94a16ed3d
 }
 
 
