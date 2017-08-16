@@ -1,3 +1,8 @@
+body
+{
+
+}
+
 .btn-file {
     position: relative;
     overflow: hidden;
@@ -55,3 +60,17 @@
     height: 80px;
     border: 3px solid grey;
 }
+
+
+#plusbutton
+{
+    width: 50px;
+    height: 50px;
+   background-color: transparent;
+
+}
+
+button {
+  outline: none; 
+}
+
