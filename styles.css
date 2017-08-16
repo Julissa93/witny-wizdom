@@ -28,7 +28,11 @@ display: block;
     display: block;
 }
 .btn-info {
+<<<<<<< HEAD
     background-color: #93CCEA;
+=======
+  
+>>>>>>> e2456d6db24325b08cc1de47518273a7a2b93157
 }
 #img-upload{
     width: 50%;
@@ -55,7 +59,9 @@ display: block;
     ul{border: 1px solid gray;}
     li{border: 1px solid teal;}
     */
-
+#skills{
+  padding: 5%;
+}
 
 .circle {
     border-radius: 50%;
@@ -74,6 +80,13 @@ display: block;
 }
 
 button {
-  outline: none; 
+  outline: none;
 }
 
+#info{
+  font-size: 18px;
+}
+
+#achievements{
+  padding-bottom: 10%; 
+}
