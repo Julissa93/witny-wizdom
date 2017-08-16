@@ -25,9 +25,18 @@
     padding-top: 5%;
 }
 
+.list-group{
+  padding-top: 10%;
+}
+
+#profilepic{
+  padding-top: 6%;
+  max-height: 300px;
+  max-width: 300px;
+}
     /*
     div{border: 1px solid blue;}
-    a{border: 1px solid red;}   
+    a{border: 1px solid red;}
     i{border: 1px solid green;}
     span{border: 1px solid yellow;}
     img{border: 1px solid pink;}
