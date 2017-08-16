@@ -14,7 +14,37 @@
 </head>
 
 <body>
-  
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="ownprofile.html" id="face3">My Profile</a>
+    <a href="explorerpage.html" id="face1">Explore Connections</a>
+    <a href="texting.html" id="face2">Messenger</a>
+    <a href="skillstaught.html" id="face4">Edit Skills</a>
+    <a href="nearby.html" id="face3">Nearby</a>
+    
+  </div>
+
+
+  <div id="main">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  </div>
+
+  <script type="text/javascript">
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+  }
+
+  function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+  }
+
+  </script>
+  <div class="container">
+      <a href="ownprofile.html" class="btn btn-success btn-md pull-left">Back</a>
+  </div>
   <div class="container text-center">
     <h2>Explorer</h2>
   </div>
@@ -22,7 +52,7 @@
     <div class="row"> 
       <div class="col col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center hvr-float"><img src="pictures/avatar1.jpg" class="circle"><br>Kylie</div>
       <div class="col col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center hvr-float"><img src="pictures/avatar2.jpeg" class="circle"><br>Elizabeth</div>
-      <div class="col col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center hvr-float"><img src="pictures/avatar3.jpg" class="circle"><br>Naman</div>  
+      <div class="col col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center hvr-float"><a href="showprofile.html"><img src="pictures/avatar3.jpg" class="circle"><br>Naman</a></div>  
     </div> 
     <div class="row"> 
       <div class="col col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center hvr-float"><img src="pictures/avatar4.jpg" class="circle"><br>Jeffrey</div>
