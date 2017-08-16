@@ -10,6 +10,7 @@ body
 { background-image: url("pictures/bg.jpg");
 display: block;
 font-family: 'Bitter', serif;
+
 }
 
 .btn-file {
@@ -33,6 +34,7 @@ font-family: 'Bitter', serif;
 }
 .btn-info {
 
+<<<<<<< HEAD
     background-color: #93CCEA;
 
 }
@@ -42,6 +44,12 @@ font-family: 'Bitter', serif;
 
 #imgInp{
     background-color: #93CCEA;
+=======
+    background-color: #93CCEA;
+
+  
+
+>>>>>>> 48be7f15f1c41312ceb7945bbf6cd3f94a16ed3d
 }
 
 
@@ -59,7 +67,7 @@ font-family: 'Bitter', serif;
   max-height: 300px;
   max-width: 300px;
 }
-    
+    /*
     div{border: 1px solid blue;}
     a{border: 1px solid red;}
     i{border: 1px solid green;}
@@ -69,6 +77,7 @@ font-family: 'Bitter', serif;
     p{border: 1px solid purple;}
     ul{border: 1px solid gray;}
     li{border: 1px solid teal;}
+    */
     
 #skills{
   padding: 5%;
@@ -100,4 +109,39 @@ button {
 
 #achievements{
   padding-bottom: 10%; 
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
